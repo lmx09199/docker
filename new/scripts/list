@@ -1,0 +1,10 @@
+flannel-v0.10.0-amd64
+heapster-amd64-v1.4.2
+heapster-grafana-amd64-v4.4.3
+heapster-influxdb-amd64-v1.3.3
+k8s-dns-dnsmasq-nanny-amd64-1.14.8
+k8s-dns-kube-dns-amd64-1.14.8
+k8s-dns-sidecar-amd64-1.14.8
+kube-proxy-amd64-v1.10.0
+kubernetes-dashboard-amd64-v1.8.3
+pause-amd64-3.1

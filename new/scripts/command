@@ -1,0 +1,40 @@
+docker pull lmx09199/docker:flannel-v0.10.0-amd64
+docker tag lmx09199/docker:flannel-v0.10.0-amd64 quay.io/coreos/flannel:v0.10.0-amd64
+docker rmi lmx09199/docker:flannel-v0.10.0-amd64
+docker save quay.io/coreos/flannel:v0.10.0-amd64 | gzip > flannel-v0.10.0-amd64.tar.gz
+docker pull lmx09199/docker:heapster-amd64-v1.4.2
+docker tag lmx09199/docker:heapster-amd64-v1.4.2 k8s.gcr.io/heapster-amd64:v1.4.2
+docker rmi lmx09199/docker:heapster-amd64-v1.4.2
+docker save k8s.gcr.io/heapster-amd64:v1.4.2 | gzip > heapster-amd64-v1.4.2.tar.gz
+docker pull lmx09199/docker:heapster-grafana-amd64-v4.4.3
+docker tag lmx09199/docker:heapster-grafana-amd64-v4.4.3 k8s.gcr.io/heapster-grafana-amd64:v4.4.3
+docker rmi lmx09199/docker:heapster-grafana-amd64-v4.4.3
+docker save k8s.gcr.io/heapster-grafana-amd64:v4.4.3 | gzip > heapster-grafana-amd64-v4.4.3.tar.gz
+docker pull lmx09199/docker:heapster-influxdb-amd64-v1.3.3
+docker tag lmx09199/docker:heapster-influxdb-amd64-v1.3.3 k8s.gcr.io/heapster-influxdb-amd64:v1.3.3
+docker rmi lmx09199/docker:heapster-influxdb-amd64-v1.3.3
+docker save k8s.gcr.io/heapster-influxdb-amd64:v1.3.3 | gzip > heapster-influxdb-amd64-v1.3.3.tar.gz
+docker pull lmx09199/docker:k8s-dns-dnsmasq-nanny-amd64-1.14.8
+docker tag lmx09199/docker:k8s-dns-dnsmasq-nanny-amd64-1.14.8 k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.14.8
+docker rmi lmx09199/docker:k8s-dns-dnsmasq-nanny-amd64-1.14.8
+docker save k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.14.8 | gzip > k8s-dns-dnsmasq-nanny-amd64-1.14.8.tar.gz
+docker pull lmx09199/docker:k8s-dns-kube-dns-amd64-1.14.8
+docker tag lmx09199/docker:k8s-dns-kube-dns-amd64-1.14.8 k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.8
+docker rmi lmx09199/docker:k8s-dns-kube-dns-amd64-1.14.8
+docker save k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.8 | gzip > k8s-dns-kube-dns-amd64-1.14.8.tar.gz
+docker pull lmx09199/docker:k8s-dns-sidecar-amd64-1.14.8
+docker tag lmx09199/docker:k8s-dns-sidecar-amd64-1.14.8 k8s.gcr.io/k8s-dns-sidecar-amd64:1.14.8
+docker rmi lmx09199/docker:k8s-dns-sidecar-amd64-1.14.8
+docker save k8s.gcr.io/k8s-dns-sidecar-amd64:1.14.8 | gzip > k8s-dns-sidecar-amd64-1.14.8.tar.gz
+docker pull lmx09199/docker:kube-proxy-amd64-v1.10.0
+docker tag lmx09199/docker:kube-proxy-amd64-v1.10.0 k8s.gcr.io/kube-proxy-amd64:v1.10.0
+docker rmi lmx09199/docker:kube-proxy-amd64-v1.10.0
+docker save k8s.gcr.io/kube-proxy-amd64:v1.10.0 | gzip > kube-proxy-amd64-v1.10.0.tar.gz
+docker pull lmx09199/docker:kubernetes-dashboard-amd64-v1.8.3
+docker tag lmx09199/docker:kubernetes-dashboard-amd64-v1.8.3 k8s.gcr.io/kubernetes-dashboard-amd64:v1.8.3
+docker rmi lmx09199/docker:kubernetes-dashboard-amd64-v1.8.3
+docker save k8s.gcr.io/kubernetes-dashboard-amd64:v1.8.3 | gzip > kubernetes-dashboard-amd64-v1.8.3.tar.gz
+docker pull lmx09199/docker:pause-amd64-3.1
+docker tag lmx09199/docker:pause-amd64-3.1 k8s.gcr.io/pause-amd64:3.1
+docker rmi lmx09199/docker:pause-amd64-3.1
+docker save k8s.gcr.io/pause-amd64:3.1 | gzip > pause-amd64-3.1.tar.gz
